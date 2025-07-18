@@ -1,52 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ciudades natales - TripleTen</title>
-    <link rel="stylesheet" href="./styles/styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <h1 class="header__title">Ciudades natales</h1>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciudades natales - TripleTen</title>
+  <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+  <header class="header">
+    <h1 class="header__title">Ciudades natales</h1>
+  </header>
 
-    <main class="employees">
-      <article class="employee-card">
-        <img
-          src="./images/juan_perez.jpg"
-          alt="Buenos Aires, Argentina"
-          class="employee-card__image"
-        />
-        <div class="employee-card__content">
-          <h2 class="employee-card__name">Juan Pérez</h2>
-          <p class="employee-card__city">Buenos Aires, Argentina</p>
-        </div>
-      </article>
+  <main class="employees">
+    <!-- Tarjeta 1 - Buenos Aires -->
+    <article class="employee-card">
+      <img
+        src="./images/juan_perez.jpg"
+        alt="Juan Pérez en Buenos Aires"
+        class="employee-card__image"
+        width="400"
+        height="300"
+        loading="lazy"
+      >
+      <div class="employee-card__content">
+        <h2 class="employee-card__name">Juan Pérez</h2>
+        <p class="employee-card__city">Buenos Aires, Argentina</p>
 
-      <article class="employee-card">
-        <img
-          src="./images/maria_garcia.jpg"
-          alt="Madrid, España"
-          class="employee-card__image"
-        />
-        <div class="employee-card__content">
-          <h2 class="employee-card__name">María García</h2>
-          <p class="employee-card__city">Madrid, España</p>
-        </div>
-      </article>
+        <div class="employee-card__description">
+          <div class="employee-card__description-content">
+            <h3 class="employee-card__description-title">Sobre Buenos Aires</h3>
+            <p>Capital de Argentina, conocida como "La París de Sudamérica" por su arquitectura europea. Destacan el Obelisco, el Teatro Colón y los coloridos barrios de La Boca y San Telmo.</p>
 
-      <article class="employee-card">
-        <img
-          src="./images/john_smith.jpg"
-          alt="Nueva York, USA"
-          class="employee-card__image"
-        />
-        <div class="employee-card__content">
-          <h2 class="employee-card__name">John Smith</h2>
-          <p class="employee-card__city">Nueva York, USA</p>
+            <ul class="employee-card__highlights" aria-label="Características destacadas">
+              <li class="employee-card__highlight-item">🗓 Mejor época: Septiembre a Noviembre</li>
+              <li class="employee-card__highlight-item">🍴 Especialidad: Asado y medialunas</li>
+              <li class="employee-card__highlight-item">🎭 Icono cultural: Tango en La Caminito</li>
+            </ul>
+          </div>
         </div>
-      </article>
-    </main>
-  </body>
+      </div>
+    </article>
+
+    <!-- Tarjeta 2 - Madrid -->
+    <article class="employee-card">
+      <img
+        src="./images/maria_garcia.jpg"
+        alt="María García en Madrid"
+        class="employee-card__image"
+        width="400"
+        height="300"
+        loading="lazy"
+      >
+      <div class="employee-card__content">
+        <h2 class="employee-card__name">María García</h2>
+        <p class="employee-card__city">Madrid, España</p>
+
+        <div class="employee-card__description">
+          <div class="employee-card__description-content">
+            <h3 class="employee-card__description-title">Sobre Madrid</h3>
+            <p>Capital de España, conocida por su rico patrimonio cultural que incluye el Museo del Prado, el Palacio Real y la Plaza Mayor.</p>
+
+            <ul class="employee-card__highlights" aria-label="Características destacadas">
+              <li class="employee-card__highlight-item">🏛 Must-see: Museo del Prado</li>
+              <li class="employee-card__highlight-item">🍷 Especialidad: Tapas</li>
+              <li class="employee-card__highlight-item">⚽ Icono deportivo: Estadio Santiago Bernabéu</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Tarjeta 3 - Nueva York -->
+    <article class="employee-card">
+      <img
+        src="./images/john_smith.jpg"
+        alt="John Smith en Nueva York"
+        class="employee-card__image"
+        width="400"
+        height="300"
+        loading="lazy"
+      >
+      <div class="employee-card__content">
+        <h2 class="employee-card__name">John Smith</h2>
+        <p class="employee-card__city">Nueva York, USA</p>
+
+        <div class="employee-card__description">
+          <div class="employee-card__description-content">
+            <h3 class="employee-card__description-title">Sobre Nueva York</h3>
+            <p>La ciudad que nunca duerme, famosa por Times Square, Central Park y la Estatua de la Libertad.</p>
+
+            <ul class="employee-card__highlights" aria-label="Características destacadas">
+              <li class="employee-card__highlight-item">🗽 Atracción icónica: Estatua de la Libertad</li>
+              <li class="employee-card__highlight-item">🍕 Comida callejera: Pizza</li>
+              <li class="employee-card__highlight-item">🎭 Capital teatral: Broadway</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
 </html>
