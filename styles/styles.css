@@ -1,50 +1,132 @@
-/* Reset básico */
+
+:root {
+
+    --primary-color: #2e2e2e;
+    --secondary-color: #666;
+    --border-color: #e0e0e0;
+    --bg-color: #f9f9f9;
+    --card-bg: #ffffff;
+
+
+    --font-main: 'Inter', sans-serif;
+
+
+    --space-lg: 30px;
+    --space-md: 20px;
+    --space-sm: 15px;
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Regular.woff2') format('woff2'),
+         url('../fonts/Inter/Inter-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter/Inter-Bold.woff2') format('woff2'),
+         url('../fonts/Inter/Inter-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-/* Estilos base */
-.page {
-    max-width: 1280px;
-    margin: 0 auto;
-    font-family: 'Inter', sans-serif;
+body {
+    font-family: var(--font-main);
+    line-height: 1.5;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    padding: var(--space-md);
 }
+
 
 .header {
-    padding: 20px 0;
     text-align: center;
+    padding: var(--space-lg) 0;
+    margin-bottom: var(--space-lg);
 }
 
-.cards {
+.header__title {
+    font-size: 44px;
+    font-weight: 700;
+}
+
+
+.employees {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
-.card {
-    border: 1px solid #ddd;
-    border-radius: 10px;
+
+.employee-card {
+    background: var(--card-bg);
+    border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.card__image {
+.employee-card__image {
     width: 100%;
-    height: 200px;
+    height: 272px;
     object-fit: cover;
+    display: block;
 }
 
-/* Media Queries */
-@media screen and (max-width: 768px) {
-    .cards {
+.employee-card__content {
+    padding: var(--space-md);
+}
+
+.employee-card__name {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: var(--space-sm);
+}
+
+.employee-card__city {
+    color: var(--secondary-color);
+    font-size: 16px;
+}
+
+
+@media (max-width: 1024px) {
+    .employees {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__title {
+        font-size: 36px;
     }
 }
 
-@media screen and (max-width: 480px) {
-    .cards {
+
+@media (max-width: 544px) {
+    .employees {
         grid-template-columns: 1fr;
+
+    }
+
+    .header__title {
+        font-size: 28px;
+    }
+
+    .employee-card__image {
+       width: 100%;
+    height: auto;
+    max-height: 272px;
+    object-fit: cover;
     }
 }

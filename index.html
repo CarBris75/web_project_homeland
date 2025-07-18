@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hometowns of TripleTen Employees</title>
-    <link rel="stylesheet" href="./styles/styles.css">
-    <!-- Si usas Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class="page">
-        <header class="header">
-            <h1 class="header__title">Hometowns</h1>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ciudades natales - TripleTen</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Ciudades natales</h1>
+    </header>
 
-        <main class="content">
-            <!-- Aquí irán las tarjetas de ciudades -->
-            <section class="cards">
-                <div class="card">
-                    <img src="./images/ciudad1.jpg" alt="Ciudad natal" class="card__image">
-                    <h2 class="card__title">Nombre Ciudad</h2>
-                    <p class="card__description">Descripción...</p>
-                </div>
-                <!-- Más tarjetas -->
-            </section>
-        </main>
+    <main class="employees">
+      <article class="employee-card">
+        <img
+          src="./images/juan_perez.jpg"
+          alt="Buenos Aires, Argentina"
+          class="employee-card__image"
+        />
+        <div class="employee-card__content">
+          <h2 class="employee-card__name">Juan Pérez</h2>
+          <p class="employee-card__city">Buenos Aires, Argentina</p>
+        </div>
+      </article>
 
-        <footer class="footer">
-            <p class="footer__copyright">© 2023 TripleTen</p>
-        </footer>
-    </div>
-</body>
+      <article class="employee-card">
+        <img
+          src="./images/maria_garcia.jpg"
+          alt="Madrid, España"
+          class="employee-card__image"
+        />
+        <div class="employee-card__content">
+          <h2 class="employee-card__name">María García</h2>
+          <p class="employee-card__city">Madrid, España</p>
+        </div>
+      </article>
+
+      <article class="employee-card">
+        <img
+          src="./images/john_smith.jpg"
+          alt="Nueva York, USA"
+          class="employee-card__image"
+        />
+        <div class="employee-card__content">
+          <h2 class="employee-card__name">John Smith</h2>
+          <p class="employee-card__city">Nueva York, USA</p>
+        </div>
+      </article>
+    </main>
+  </body>
 </html>
