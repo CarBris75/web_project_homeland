@@ -19,7 +19,7 @@ max-width: 1184px;
   .photo-grid {
   display: grid;
   grid-template-columns: 50% 50% ;
-gap: 1px;
+gap: 20px;
 width: 720px;
 }
 }

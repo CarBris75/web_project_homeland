@@ -128,18 +128,23 @@ margin: 0 0 8px;
   font-size: 32px;
   padding: 0 16px;
      width: 100%;
+     grid-column: 1;
+    grid-row: 1;
 }
 
 .place__website {
   padding: 0;
   margin-bottom: 30px;
+  grid-column: 1;
+  grid-row: 2;
+  width: 100%;
 }
 
 .place__description {
   padding: 0 16px;
   color: #ffffff;
-   grid-row: none;
-   grid-column: none;
+   grid-row: 4;
+   grid-column: 1;
 }
 .place__url-heading {
   font-size: 12px;
@@ -154,7 +159,10 @@ height: 15px;
 
 .place__image {
     grid-row: none;
-    max-width: 100%;
+    max-width: 250px;
+    grid-row: 3;
+    grid-column: 1;
+
   }
 .place__paragraph {
   width: 100%;
@@ -166,9 +174,9 @@ height: auto;
   color: #ffffff;
 }
 .place__button {
-    grid-row: none;
+    grid-row: 5;
     width: 100%;
-    max-width: 289px;
-    grid-column: none;
+    max-width: 250px;
+    grid-column: 1;
   }
 }
