@@ -20,15 +20,16 @@ max-width: 1184px;
   display: grid;
   grid-template-columns: 50% 50% ;
 gap: 1px;
-  }
+width: 720px;
+}
 }
 
 
 @media screen and (max-width: 320px) {
   .photo-grid {
    display: grid;
-  grid-template-columns: 20% 20% 20% 20%;
-    gap: 300px;
-
+  grid-template-columns:1fr;
+    gap: 20px;
+width: 100%;
   }
 }

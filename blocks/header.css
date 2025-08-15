@@ -24,7 +24,7 @@
   line-height: 36px;
   text-align: center;
   color: #ffffff;
-  margin: 20;
+  margin: 20px;
 }
 .header__image {
   width: 984px;
@@ -35,8 +35,8 @@
 
 @media screen and (max-width: 768px) {
   .header__logo {
-    width: 254;
-    height: 66;
+    width: 254px;
+    height: 66px;
   }
   .header__title {
     width: 100%;

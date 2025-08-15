@@ -1,7 +1,10 @@
 
 .place {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 984px;
+  margin: 0 auto 80px;
 
 }
 .place__title {
@@ -9,6 +12,8 @@
   font-weight: 900;
   line-height: 1.06;
   color: #ffffff;
+  grid-column: 1 / -1;
+  margin: 0;
 }
 
 .place__website {
@@ -25,7 +30,7 @@
   letter-spacing: 0.12em;
   color: #aaaaaa;
   text-transform: uppercase;
-
+margin: 0 0 8px;
 }
 
 .place__artist {
@@ -84,12 +89,16 @@
 .place {
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 40px 40px;
+  gap: 28px;
   margin-bottom: 72px;
+  max-width: 720px;
+
+
 }
 
 .place__title {
   font-size: 42px;
+   padding: 0 16px;
 }
 
 .place__image {
@@ -110,22 +119,27 @@
 .place {
   margin-bottom: 50px;
      display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    margin-bottom: 50px;
+    padding: 0 16px;
 }
 .place__title {
   font-size: 32px;
   padding: 0 16px;
-     width: 320px;
-height: 481px
+     width: 100%;
 }
 
 .place__website {
-  padding: 0 16px;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .place__description {
   padding: 0 16px;
   color: #ffffff;
+   grid-row: none;
+   grid-column: none;
 }
 .place__url-heading {
   font-size: 12px;
@@ -134,17 +148,27 @@ height: 481px
   letter-spacing: 0.12em;
   color: #aaaaaa;
   text-transform: uppercase;
-  width: 288px;
+  width: 100%;
 height: 15px;
-
 }
+
+.place__image {
+    grid-row: none;
+    max-width: 100%;
+  }
 .place__paragraph {
-  width: 288px;
-height: 260px;
+  width: 100%;
+height: auto;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.63;
   margin: 0 0 25px;
   color: #ffffff;
 }
+.place__button {
+    grid-row: none;
+    width: 100%;
+    max-width: 289px;
+    grid-column: none;
+  }
 }
