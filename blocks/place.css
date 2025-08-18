@@ -65,7 +65,7 @@ margin: 0 0 8px;
 }
 
 .place__button {
-  background: #0278fe;
+  background: linear-gradient(90deg, #0278fe 0%, #0063d2 100%);
   color: #ffffff;
   font-size: 18px;
   font-weight: 600;
@@ -77,11 +77,12 @@ margin: 0 0 8px;
   grid-row: 3;
   margin-top: 48px;
   max-width: 289px;
+  transition: all 0.3s ease;
 }
 
 .place__button:hover {
-  background: #0063d2;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(90deg, #0063d2 0%, #004a96 100%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 @media screen and (max-width: 768px) {
@@ -178,5 +179,6 @@ height: auto;
     width: 100%;
     max-width: 250px;
     grid-column: 1;
+
   }
 }
